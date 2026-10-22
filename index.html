@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meal Prep Math - meal prep, batch and container arithmetic</title>
+<style>
+  :root { --accent:#c2552b; --ink:#2e1710; --paper:#fcf3ee; --soft:#f6e0d5; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#94593f; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Meal Prep Math</h1>
+  <p class="lede">The 2 people at 2 meals a day for 5 days need 20 meals.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Meal Prep Math counts meal prep with multiplication, division and rounding-up: the meals a stretch of days takes, the batches and containers they need, and the cost. It uses no named constants. It applies the counting as written, so it has not met your household and does not know your recipes, appetites, storage, how long food keeps or any food safety rule, and it gives no verdict that a plan is enough, safe or healthy. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: 2 people, 2 meals a day, 5 days, 6 portions a batch, packs of 8 containers, batches at $18.50 and packs at $9.00.</p>
+  <section>
+    <h2>The batch truth</h2>
+    <p>The 20 meals at 6 a batch take 4 batches, leaving 4 portions spare.</p>
+  </section>
+  <section>
+    <h2>The box truth</h2>
+    <p>The 20 meals in packs of 8 containers take 3 packs, leaving 4 containers spare.</p>
+  </section>
+  <section>
+    <h2>The cost truth</h2>
+    <p>The 4 batches at $18.50 and 3 packs at $9.00 cost $101.00, batches $74.00 and packs $27.00.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Meal Prep Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
