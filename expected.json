@@ -1,0 +1,935 @@
+{
+ "cases": [
+  {
+   "fn": "meals",
+   "args": [
+    "2",
+    "2",
+    "5"
+   ],
+   "expect": "The 2 people at 2 meals a day for 5 days need 20 meals."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "20",
+    "6"
+   ],
+   "expect": "The 20 meals at 6 a batch take 4 batches, leaving 4 portions spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "20",
+    "8"
+   ],
+   "expect": "The 20 meals in packs of 8 containers take 3 packs, leaving 4 containers spare."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4",
+    "18.50",
+    "3",
+    "9"
+   ],
+   "expect": "The 4 batches at $18.50 and 3 packs at $9.00 cost $101.00, batches $74.00 and packs $27.00."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "1",
+    "1",
+    "1"
+   ],
+   "expect": "The 1 person at 1 meal a day for 1 day need 1 meal."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 meal at 1 a batch take 1 batch, leaving 0 portions spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 meal in packs of 1 containers take 1 pack, leaving 0 containers spare."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1",
+    "0.01",
+    "1",
+    "0.01"
+   ],
+   "expect": "The 1 batch at $0.01 and 1 pack at $0.01 cost $0.02, batches $0.01 and packs $0.01."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "2",
+    "3",
+    "40"
+   ],
+   "expect": "The 2 people at 3 meals a day for 40 days need 240 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "81",
+    "2",
+    "57"
+   ],
+   "expect": "The 81 people at 2 meals a day for 57 days need 9234 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "69",
+    "6",
+    "1"
+   ],
+   "expect": "The 69 people at 6 meals a day for 1 day need 414 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "70",
+    "9",
+    "11"
+   ],
+   "expect": "The 70 people at 9 meals a day for 11 days need 6930 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "90",
+    "2",
+    "14"
+   ],
+   "expect": "The 90 people at 2 meals a day for 14 days need 2520 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "73",
+    "7",
+    "59"
+   ],
+   "expect": "The 73 people at 7 meals a day for 59 days need 30149 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "4",
+    "10",
+    "39"
+   ],
+   "expect": "The 4 people at 10 meals a day for 39 days need 1560 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "32",
+    "1",
+    "44"
+   ],
+   "expect": "The 32 people at 1 meal a day for 44 days need 1408 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "78",
+    "10",
+    "12"
+   ],
+   "expect": "The 78 people at 10 meals a day for 12 days need 9360 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "61",
+    "8",
+    "37"
+   ],
+   "expect": "The 61 people at 8 meals a day for 37 days need 18056 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "33",
+    "2",
+    "17"
+   ],
+   "expect": "The 33 people at 2 meals a day for 17 days need 1122 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "59",
+    "9",
+    "18"
+   ],
+   "expect": "The 59 people at 9 meals a day for 18 days need 9558 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "55",
+    "5",
+    "24"
+   ],
+   "expect": "The 55 people at 5 meals a day for 24 days need 6600 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "43",
+    "2",
+    "10"
+   ],
+   "expect": "The 43 people at 2 meals a day for 10 days need 860 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "31",
+    "8",
+    "30"
+   ],
+   "expect": "The 31 people at 8 meals a day for 30 days need 7440 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "73",
+    "9",
+    "43"
+   ],
+   "expect": "The 73 people at 9 meals a day for 43 days need 28251 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "60",
+    "4",
+    "3"
+   ],
+   "expect": "The 60 people at 4 meals a day for 3 days need 720 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "68",
+    "6",
+    "58"
+   ],
+   "expect": "The 68 people at 6 meals a day for 58 days need 23664 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "81",
+    "7",
+    "15"
+   ],
+   "expect": "The 81 people at 7 meals a day for 15 days need 8505 meals."
+  },
+  {
+   "fn": "meals",
+   "args": [
+    "59",
+    "5",
+    "11"
+   ],
+   "expect": "The 59 people at 5 meals a day for 11 days need 3245 meals."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "27258",
+    "910"
+   ],
+   "expect": "The 27258 meals at 910 a batch take 30 batches, leaving 42 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "51812",
+    "264"
+   ],
+   "expect": "The 51812 meals at 264 a batch take 197 batches, leaving 196 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "31949",
+    "345"
+   ],
+   "expect": "The 31949 meals at 345 a batch take 93 batches, leaving 136 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "21467",
+    "814"
+   ],
+   "expect": "The 21467 meals at 814 a batch take 27 batches, leaving 511 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "71813",
+    "655"
+   ],
+   "expect": "The 71813 meals at 655 a batch take 110 batches, leaving 237 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "73817",
+    "632"
+   ],
+   "expect": "The 73817 meals at 632 a batch take 117 batches, leaving 127 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "39746",
+    "437"
+   ],
+   "expect": "The 39746 meals at 437 a batch take 91 batches, leaving 21 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "5713",
+    "974"
+   ],
+   "expect": "The 5713 meals at 974 a batch take 6 batches, leaving 131 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "22687",
+    "275"
+   ],
+   "expect": "The 22687 meals at 275 a batch take 83 batches, leaving 138 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "32033",
+    "848"
+   ],
+   "expect": "The 32033 meals at 848 a batch take 38 batches, leaving 191 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "76364",
+    "289"
+   ],
+   "expect": "The 76364 meals at 289 a batch take 265 batches, leaving 221 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "35737",
+    "810"
+   ],
+   "expect": "The 35737 meals at 810 a batch take 45 batches, leaving 713 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "98551",
+    "249"
+   ],
+   "expect": "The 98551 meals at 249 a batch take 396 batches, leaving 53 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "13896",
+    "808"
+   ],
+   "expect": "The 13896 meals at 808 a batch take 18 batches, leaving 648 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "77644",
+    "910"
+   ],
+   "expect": "The 77644 meals at 910 a batch take 86 batches, leaving 616 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "62867",
+    "151"
+   ],
+   "expect": "The 62867 meals at 151 a batch take 417 batches, leaving 100 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "18959",
+    "486"
+   ],
+   "expect": "The 18959 meals at 486 a batch take 40 batches, leaving 481 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "42534",
+    "447"
+   ],
+   "expect": "The 42534 meals at 447 a batch take 96 batches, leaving 378 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "34834",
+    "400"
+   ],
+   "expect": "The 34834 meals at 400 a batch take 88 batches, leaving 366 portions spare."
+  },
+  {
+   "fn": "batch",
+   "args": [
+    "34621",
+    "367"
+   ],
+   "expect": "The 34621 meals at 367 a batch take 95 batches, leaving 244 portions spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "16560",
+    "970"
+   ],
+   "expect": "The 16560 meals in packs of 970 containers take 18 packs, leaving 900 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "39621",
+    "242"
+   ],
+   "expect": "The 39621 meals in packs of 242 containers take 164 packs, leaving 67 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "1987",
+    "600"
+   ],
+   "expect": "The 1987 meals in packs of 600 containers take 4 packs, leaving 413 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "8644",
+    "466"
+   ],
+   "expect": "The 8644 meals in packs of 466 containers take 19 packs, leaving 210 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "72903",
+    "243"
+   ],
+   "expect": "The 72903 meals in packs of 243 containers take 301 packs, leaving 240 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "77645",
+    "20"
+   ],
+   "expect": "The 77645 meals in packs of 20 containers take 3883 packs, leaving 15 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "22282",
+    "112"
+   ],
+   "expect": "The 22282 meals in packs of 112 containers take 199 packs, leaving 6 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "16719",
+    "192"
+   ],
+   "expect": "The 16719 meals in packs of 192 containers take 88 packs, leaving 177 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "11415",
+    "357"
+   ],
+   "expect": "The 11415 meals in packs of 357 containers take 32 packs, leaving 9 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "67181",
+    "423"
+   ],
+   "expect": "The 67181 meals in packs of 423 containers take 159 packs, leaving 76 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "75652",
+    "941"
+   ],
+   "expect": "The 75652 meals in packs of 941 containers take 81 packs, leaving 569 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "48605",
+    "902"
+   ],
+   "expect": "The 48605 meals in packs of 902 containers take 54 packs, leaving 103 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "1634",
+    "544"
+   ],
+   "expect": "The 1634 meals in packs of 544 containers take 4 packs, leaving 542 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "12933",
+    "399"
+   ],
+   "expect": "The 12933 meals in packs of 399 containers take 33 packs, leaving 234 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "16789",
+    "230"
+   ],
+   "expect": "The 16789 meals in packs of 230 containers take 73 packs, leaving 1 container spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "48847",
+    "963"
+   ],
+   "expect": "The 48847 meals in packs of 963 containers take 51 packs, leaving 266 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "82399",
+    "813"
+   ],
+   "expect": "The 82399 meals in packs of 813 containers take 102 packs, leaving 527 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "35372",
+    "342"
+   ],
+   "expect": "The 35372 meals in packs of 342 containers take 104 packs, leaving 196 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "3303",
+    "150"
+   ],
+   "expect": "The 3303 meals in packs of 150 containers take 23 packs, leaving 147 containers spare."
+  },
+  {
+   "fn": "box",
+   "args": [
+    "6410",
+    "213"
+   ],
+   "expect": "The 6410 meals in packs of 213 containers take 31 packs, leaving 193 containers spare."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "89289",
+    "3790.8",
+    "73330",
+    "2944.09"
+   ],
+   "expect": "The 89289 batches at $3790.80 and 73330 packs at $2944.09 cost $554366860.90, batches $338476741.20 and packs $215890119.70."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "59044",
+    "1319.87",
+    "5064",
+    "7742.69"
+   ],
+   "expect": "The 59044 batches at $1319.87 and 5064 packs at $7742.69 cost $117139386.44, batches $77930404.28 and packs $39208982.16."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1009",
+    "9446.65",
+    "10090",
+    "8870.23"
+   ],
+   "expect": "The 1009 batches at $9446.65 and 10090 packs at $8870.23 cost $99032290.55, batches $9531669.85 and packs $89500620.70."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4186",
+    "7506.06",
+    "24154",
+    "5713.51"
+   ],
+   "expect": "The 4186 batches at $7506.06 and 24154 packs at $5713.51 cost $169424487.70, batches $31420367.16 and packs $138004120.54."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "94189",
+    "5219.98",
+    "51395",
+    "2455.66"
+   ],
+   "expect": "The 94189 batches at $5219.98 and 51395 packs at $2455.66 cost $617873341.92, batches $491664696.22 and packs $126208645.70."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "69048",
+    "1609.64",
+    "39510",
+    "610.04"
+   ],
+   "expect": "The 69048 batches at $1609.64 and 39510 packs at $610.04 cost $135245103.12, batches $111142422.72 and packs $24102680.40."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "71854",
+    "4577.33",
+    "47177",
+    "6649.3"
+   ],
+   "expect": "The 71854 batches at $4577.33 and 47177 packs at $6649.30 cost $642593495.92, batches $328899469.82 and packs $313694026.10."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "51996",
+    "4382.5",
+    "59318",
+    "2484.8"
+   ],
+   "expect": "The 51996 batches at $4382.50 and 59318 packs at $2484.80 cost $375265836.40, batches $227872470.00 and packs $147393366.40."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "61614",
+    "7843.39",
+    "54514",
+    "5023.67"
+   ],
+   "expect": "The 61614 batches at $7843.39 and 54514 packs at $5023.67 cost $757122977.84, batches $483262631.46 and packs $273860346.38."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "18355",
+    "6356.88",
+    "83933",
+    "4953.97"
+   ],
+   "expect": "The 18355 batches at $6356.88 and 83933 packs at $4953.97 cost $532482096.41, batches $116680532.40 and packs $415801564.01."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "2156",
+    "3966.94",
+    "20479",
+    "8960.57"
+   ],
+   "expect": "The 2156 batches at $3966.94 and 20479 packs at $8960.57 cost $192056235.67, batches $8552722.64 and packs $183503513.03."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "34100",
+    "1799.37",
+    "33895",
+    "1256.55"
+   ],
+   "expect": "The 34100 batches at $1799.37 and 33895 packs at $1256.55 cost $103949279.25, batches $61358517.00 and packs $42590762.25."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "46195",
+    "2306.66",
+    "55627",
+    "1050.85"
+   ],
+   "expect": "The 46195 batches at $2306.66 and 55627 packs at $1050.85 cost $165011791.65, batches $106556158.70 and packs $58455632.95."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "81062",
+    "6880.88",
+    "43269",
+    "8800.99"
+   ],
+   "expect": "The 81062 batches at $6880.88 and 43269 packs at $8800.99 cost $938587930.87, batches $557777894.56 and packs $380810036.31."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "47297",
+    "6957.28",
+    "62095",
+    "5369.3"
+   ],
+   "expect": "The 47297 batches at $6957.28 and 62095 packs at $5369.30 cost $662465155.66, batches $329058472.16 and packs $333406683.50."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "63246",
+    "4071.82",
+    "56208",
+    "1873.51"
+   ],
+   "expect": "The 63246 batches at $4071.82 and 56208 packs at $1873.51 cost $362832577.80, batches $257526327.72 and packs $105306250.08."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "15594",
+    "9035.02",
+    "99371",
+    "4403.92"
+   ],
+   "expect": "The 15594 batches at $9035.02 and 99371 packs at $4403.92 cost $578514036.20, batches $140892101.88 and packs $437621934.32."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "52897",
+    "7965.2",
+    "40499",
+    "3189.05"
+   ],
+   "expect": "The 52897 batches at $7965.20 and 40499 packs at $3189.05 cost $550488520.35, batches $421335184.40 and packs $129153335.95."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "73317",
+    "3479.35",
+    "29284",
+    "4328.72"
+   ],
+   "expect": "The 73317 batches at $3479.35 and 29284 packs at $4328.72 cost $381857740.43, batches $255095503.95 and packs $126762236.48."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "61974",
+    "4324.48",
+    "48274",
+    "4305.94"
+   ],
+   "expect": "The 61974 batches at $4324.48 and 48274 packs at $4305.94 cost $475870271.08, batches $268005323.52 and packs $207864947.56."
+  }
+ ],
+ "errors": [
+  [
+   "meals",
+   [
+    "0",
+    "2",
+    "5"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "101",
+    "2",
+    "5"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "2",
+    "0",
+    "5"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "2",
+    "11",
+    "5"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "2",
+    "2",
+    "0"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "2",
+    "2",
+    "61"
+   ]
+  ],
+  [
+   "meals",
+   [
+    "2.5",
+    "2",
+    "5"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "0",
+    "6"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "100001",
+    "6"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "20",
+    "0"
+   ]
+  ],
+  [
+   "batch",
+   [
+    "20",
+    "1001"
+   ]
+  ],
+  [
+   "box",
+   [
+    "0",
+    "8"
+   ]
+  ],
+  [
+   "box",
+   [
+    "20",
+    "0"
+   ]
+  ],
+  [
+   "box",
+   [
+    "20",
+    "1001"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "18.5",
+    "3",
+    "9"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "0",
+    "3",
+    "9"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "18.5",
+    "0",
+    "9"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "18.5",
+    "3",
+    "0"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "18.5",
+    "3",
+    "10000.01"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "4",
+    "18.555",
+    "3",
+    "9"
+   ]
+  ]
+ ]
+}
